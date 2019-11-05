@@ -1,0 +1,20 @@
+services:
+  # logger.channel.my_location:
+  #   parent: logger.channel_base
+  #   arguments: ['my_location']
+  my_location.time:
+    class: Drupal\my_location\MyLocationTimeService
+    arguments: ['@database', '@smart_ip.smart_ip_location', '@datetime.time', '@config.factory']
+
+#   my_location.event_subscriber:
+#     class: Drupal\my_location\EventSubscriber\MyLocationSubscriber
+#     arguments: ['@messenger']
+#     tags:
+#       - { name: event_subscriber }
+
+  # logger.channel.my_location:
+  #   parent: logger.channel_base
+  #   arguments: ['my_location']
+  # my_location.default:
+  #   class: Drupal\my_location\DefaultService
+  #   arguments: ['@database', '@smart_ip.smart_ip_location', '@config.manager', '@config.factory']

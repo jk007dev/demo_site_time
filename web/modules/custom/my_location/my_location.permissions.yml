@@ -1,0 +1,4 @@
+administer my_location configuration:
+  title: 'Administer my_location configuration'
+  description: 'Optional description.'
+  restrict access: true

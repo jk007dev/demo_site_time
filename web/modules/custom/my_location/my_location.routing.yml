@@ -1,0 +1,7 @@
+my_location.settings_form:
+  path: '/admin/config/system/my-location'
+  defaults:
+    _title: 'My Location settings'
+    _form: 'Drupal\my_location\Form\SettingsForm'
+  requirements:
+    _permission: 'administer my_location configuration'

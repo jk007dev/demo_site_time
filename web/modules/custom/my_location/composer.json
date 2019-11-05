@@ -1,0 +1,12 @@
+{
+    "name": "my_location",
+    "type": "drupal-module",
+    "description": "Custom module",
+    "keywords": [
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/smart_ip": "~3.6",
+        "drupal/tzfield": "~1.0"
+    }
+}

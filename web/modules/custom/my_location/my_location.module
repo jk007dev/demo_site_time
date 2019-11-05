@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for My Location module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function my_location_theme($existing, $type, $theme, $path) {
+  $theme = [];
+  $theme['my_location_block'] = [
+    'template' => 'block--my-location',
+    'variables' => [
+      'title' => NULL,
+      'data' => [],
+    ],
+  ];
+  return $theme;
+}
